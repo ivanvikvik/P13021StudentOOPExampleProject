@@ -1,20 +1,21 @@
 #include "Student.h"
+#include "Group.h"
 
 int main() {
-	Student st;
-	Student st1;
-	Student st2;
+	Group group1("10a");
+	Group group2("10b");
 
-	st.setName("Alex");
-	st.setAge(15);
-	st.setMark(10);
+	Student st1("Alex", 14, 9);
+	Student st2("Anna", 15, 10);
+	Student st3("Kirill", 15, 10);
+	Student st4("Artyom", 15, 4);
 
-	st.setAge(1000);
-	st.setMark(1000);
+	group1.add(st1);
+	group1.add(st2);
+	group1.add(st3);
+	group1.add(st4);
 
-	cout << st.getInfo() << endl;
-	cout << st1.getInfo() << endl;
-	cout << st2.getInfo() << endl;
-
+	cout << group1.getInfo() << endl;
+	
 	return 0;
 }

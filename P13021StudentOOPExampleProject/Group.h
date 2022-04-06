@@ -19,6 +19,7 @@ public:
 
 	int getCount();
 	Student get(int index);
+	void add(Student student);
 
 	string getInfo();
 };
