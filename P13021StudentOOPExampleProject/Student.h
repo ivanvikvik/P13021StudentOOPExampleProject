@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Header.h"
 
 class Student {
@@ -14,7 +14,7 @@ public:
 	Student(string name, int age, double mark);
 	// destructor of Student
 	~Student();
-	// комментарии на русском языке
+	// РєРѕРјРјРµРЅС‚Р°СЂРёРё РЅР° СЂСѓСЃСЃРєРѕРј СЏР·С‹РєРµ
 	string getName();
 	void setName(string name);
 	int getAge();
