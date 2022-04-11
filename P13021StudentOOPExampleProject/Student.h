@@ -14,6 +14,7 @@ public:
 	Student(string name, int age, double mark);
 	// destructor of Student
 	~Student();
+	// комментарии на русском языке
 	string getName();
 	void setName(string name);
 	int getAge();
