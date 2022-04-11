@@ -63,6 +63,25 @@ void Group::add(Student student) {
 	}
 }
 
+void Group::remove(int index) {
+	if (list != NULL && index >= 0 && index < count) {
+		Student* temp = new Student[count - 1];
+
+		for (int i = 0, j = 0; i < count; i++)
+		{
+			if (i != index) {
+				temp[j] = list[i];
+				j++;
+			}
+		}
+
+		delete[] list;
+		list = temp;
+		count--;
+	}
+}
+
+
 string Group::getInfo() {
 	if (list == NULL) {
 		return "Group " + name + " is empty.";

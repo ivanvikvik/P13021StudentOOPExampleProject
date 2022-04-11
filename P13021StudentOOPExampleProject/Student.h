@@ -8,18 +8,24 @@ private:
 	double mark;
 
 public:
-	// default constructor of Student
+	static const int MAX_MARK = 10;
+	static const int MIN_MARK = 0;
+
+	static const int MAX_STUDENT_AGE = 100;
+	static const int MIN_STUDENT_AGE = 14;
+
 	Student();
-	// constructor of Student with params
 	Student(string name, int age, double mark);
-	// destructor of Student
 	~Student();
-	// комментарии на русском языке
+	
 	string getName();
 	void setName(string name);
+	
 	int getAge();
 	void setAge(int age);
+	
 	double getMark();
 	void setMark(double mark);
+	
 	string getInfo();
 };
