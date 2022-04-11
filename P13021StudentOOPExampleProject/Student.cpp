@@ -1,7 +1,11 @@
 ﻿#include "Student.h"
 
+// class static variables
+int Student::count = 0;
+
 // default constructor of Student
 Student::Student() {
+	count++;
 	name = "no name";
 	age = 14;
 	mark = 4;
@@ -9,6 +13,7 @@ Student::Student() {
 
 // constructor of Student with params
 Student::Student(string name, int age, double mark) {
+	count++;
 	this->name = name;
 	this->age = age;
 	this->mark = mark;
@@ -16,7 +21,7 @@ Student::Student(string name, int age, double mark) {
 
 // destructor of Student
 Student::~Student() {
-
+	count--;
 }
 
 string Student::getName() {
