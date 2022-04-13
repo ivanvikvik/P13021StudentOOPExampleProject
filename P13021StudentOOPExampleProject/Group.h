@@ -3,6 +3,9 @@
 #include "Student.h"
 
 class Group {
+
+	friend class Manager;
+
 private:
 	string name;
 	int count;
@@ -22,6 +25,8 @@ public:
 	
 	void add(Student student);
 	void remove(int index);
+
+	void change(Student& student);
 
 	string getInfo();
 };

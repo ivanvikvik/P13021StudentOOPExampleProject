@@ -96,3 +96,8 @@ string Group::getInfo() {
 
 	return msg;
 }
+
+void Group::change(Student& student) {
+	srand(time(0));
+	student.mark = rand() % 7 + 4;
+}
