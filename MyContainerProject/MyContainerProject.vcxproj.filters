@@ -15,33 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Student.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Group.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Manager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Queue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Student.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Group.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Manager.cpp">
+    <ClCompile Include="..\P13021StudentOOPExampleProject\Queue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

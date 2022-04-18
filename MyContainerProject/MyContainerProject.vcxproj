@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1884c57d-e9b8-4d6b-842a-2523c1a77c98}</ProjectGuid>
-    <RootNamespace>P13021StudentOOPExampleProject</RootNamespace>
+    <ProjectGuid>{8d94e323-c6bc-46f5-86df-e471a3c1f82c}</ProjectGuid>
+    <RootNamespace>MyContainerProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,17 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Group.h" />
-    <ClInclude Include="Header.h" />
-    <ClInclude Include="Manager.h" />
-    <ClInclude Include="Queue.h" />
-    <ClInclude Include="Student.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Group.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Manager.cpp" />
-    <ClCompile Include="Student.cpp" />
+    <ClCompile Include="..\P13021StudentOOPExampleProject\Queue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
