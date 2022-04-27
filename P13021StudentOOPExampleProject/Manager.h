@@ -12,7 +12,7 @@ public:
 	//void sortByAgeAsc(Group group);
 	//void sortByAgeDesc(Group group);
 
-	double calculateAvgMark(Group group);
+	//double calculateAvgMark(Group group);
 	//double calculateAvgAge(Group group);
 
 	//bool checkStudent(Group group, Student student);

@@ -2,14 +2,26 @@
 #include "Header.h"
 #include "Group.h"
 
-class Student {
 
-	friend void changeMark(Student& student);
-	friend void Group::change(Student& student);
+//class Human {
+//public:
+//	Human() {
+//		cout << "Human default constructor" << endl;
+//	}
+//	Human(string name, int age, double mark) {
+//		cout << "Human constructor" << endl;
+//	}
+//	~Human() {
+//		cout << "Human destructor" << endl;
+//	}
+//};
+
+class Student {
 
 private:
 	static int count;
 
+protected:
 	string name;
 	int age;
 	double mark;

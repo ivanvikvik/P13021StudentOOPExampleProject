@@ -2,15 +2,8 @@
 #include "Group.h"
 #include "SuperStudent.h"
 
-
-void changeMark(Student &student) {
-	srand(time(0));
-	student.mark = rand() % 7 + 4;
-}
-
 int main() {
-	SuperStudent sstudent;
-	sstudent.
+	SuperStudent student("Alex", 14, 10, "ability");
 	//Group group1("10a");
 	//Group group2("10b");
 

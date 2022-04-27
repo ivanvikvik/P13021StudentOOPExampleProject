@@ -9,7 +9,7 @@ private:
 
 public:
 	Leader();
-	Leader(string name, int age, double mark);
+	Leader(string name, int age, double mark, string phoneNumber, string e_mail);
 	~Leader();
 		
 	string getPhoneNumber();

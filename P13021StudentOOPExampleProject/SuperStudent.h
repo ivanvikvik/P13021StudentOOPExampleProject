@@ -11,9 +11,9 @@ public:
 	SuperStudent(string name, int age, double mark, string ability);
 	~SuperStudent();
 
-	string getAbility();
-	void setAbility(string ability);
+	//string getAbility();
+	//void setAbility(string ability);
 
-	string getInfo();
+	//string getInfo();
 };
 

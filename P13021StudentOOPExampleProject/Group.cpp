@@ -1,103 +1,98 @@
-﻿#include "Group.h"
-
-Group::Group() {
-	name = "no name";
-	count = 0;
-	list = NULL;
-}
-
-Group::Group(string name) {
-	this->name = name;
-	count = 0;
-	list = NULL;
-}
-Group::Group(string name, Student* list, int count) {
-	this->name = name;
-	this->list = list;
-	this->count = count;
-}
-
-Group::~Group() {
-	if (list != NULL) {
-		delete[] list;
-	}
-}
-
-string Group::getName() {
-	return name;
-}
-
-void Group::setName(string name) {
-	this->name = name;
-}
-
-int Group::getCount() {
-	return count;
-}
-
-Student Group::get(int index) {
-	if (list == NULL || index < 0 || index >= count) {
-		return Student("", 0, 0);
-	}
-
-	return list[index];
-}
-
-void Group::add(Student student) {
-	if (list == NULL) {
-		list = new Student[1];
-		count = 1;
-		list[0] = student;
-	}
-	else {
-		Student* temp = new Student[count + 1];
-		int  i = 0;
-		for (; i < count; i++)
-		{
-			temp[i] = list[i];
-		}
-		temp[i] = student;
-		delete[] list;
-		list = temp;
-		count++;
-	}
-}
-
-void Group::remove(int index) {
-	if (list != NULL && index >= 0 && index < count) {
-		Student* temp = new Student[count - 1];
-
-		for (int i = 0, j = 0; i < count; i++)
-		{
-			if (i != index) {
-				temp[j] = list[i];
-				j++;
-			}
-		}
-
-		delete[] list;
-		list = temp;
-		count--;
-	}
-}
-
-
-string Group::getInfo() {
-	if (list == NULL) {
-		return "Group " + name + " is empty.";
-	}
-
-	string msg = "Students of group " + name + ":\n";
-
-	for (int i = 0; i < count; i++)
-	{
-		msg += list[i].getInfo() + "\n";
-	}
-
-	return msg;
-}
-
-void Group::change(Student& student) {
-	srand(time(0));
-	student.mark = rand() % 7 + 4;
-}
+﻿//#include "Group.h"
+//
+//Group::Group() {
+//	name = "no name";
+//	count = 0;
+//	list = NULL;
+//}
+//
+//Group::Group(string name) {
+//	this->name = name;
+//	count = 0;
+//	list = NULL;
+//}
+//Group::Group(string name, Student* list, int count) {
+//	this->name = name;
+//	this->list = list;
+//	this->count = count;
+//}
+//
+//Group::~Group() {
+//	if (list != NULL) {
+//		delete[] list;
+//	}
+//}
+//
+//string Group::getName() {
+//	return name;
+//}
+//
+//void Group::setName(string name) {
+//	this->name = name;
+//}
+//
+//int Group::getCount() {
+//	return count;
+//}
+//
+//Student Group::get(int index) {
+//	if (list == NULL || index < 0 || index >= count) {
+//		return Student("", 0, 0);
+//	}
+//
+//	return list[index];
+//}
+//
+//void Group::add(Student student) {
+//	if (list == NULL) {
+//		list = new Student[1];
+//		count = 1;
+//		list[0] = student;
+//	}
+//	else {
+//		Student* temp = new Student[count + 1];
+//		int  i = 0;
+//		for (; i < count; i++)
+//		{
+//			temp[i] = list[i];
+//		}
+//		temp[i] = student;
+//		delete[] list;
+//		list = temp;
+//		count++;
+//	}
+//}
+//
+//void Group::remove(int index) {
+//	if (list != NULL && index >= 0 && index < count) {
+//		Student* temp = new Student[count - 1];
+//
+//		for (int i = 0, j = 0; i < count; i++)
+//		{
+//			if (i != index) {
+//				temp[j] = list[i];
+//				j++;
+//			}
+//		}
+//
+//		delete[] list;
+//		list = temp;
+//		count--;
+//	}
+//}
+//
+//
+//string Group::getInfo() {
+//	if (list == NULL) {
+//		return "Group " + name + " is empty.";
+//	}
+//
+//	string msg = "Students of group " + name + ":\n";
+//
+//	for (int i = 0; i < count; i++)
+//	{
+//		msg += list[i].getInfo() + "\n";
+//	}
+//
+//	return msg;
+//}

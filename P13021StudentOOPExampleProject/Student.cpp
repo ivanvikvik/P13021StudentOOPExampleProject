@@ -9,6 +9,7 @@ Student::Student() {
 	name = "no name";
 	age = 14;
 	mark = 4;
+	cout << "Student default constructor" << endl;
 }
 
 // constructor of Student with params
@@ -17,11 +18,13 @@ Student::Student(string name, int age, double mark) {
 	this->name = name;
 	this->age = age;
 	this->mark = mark;
+	cout << "Student constructor with params" << endl;
 }
 
 // destructor of Student
 Student::~Student() {
 	count--;
+	cout << "Student destructor" << endl;
 }
 
 string Student::getName() {
@@ -53,5 +56,6 @@ void Student::setMark(double mark) {
 }
 
 string Student::getInfo() {
-	return name + ": age = " + to_string(age) + "; mark = " + to_string(mark);
+	return name + ": age = " + to_string(age)
+		+ "; mark = " + to_string(mark);
 }
