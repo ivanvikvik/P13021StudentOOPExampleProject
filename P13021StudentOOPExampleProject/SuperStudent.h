@@ -4,8 +4,6 @@
 class SuperStudent : public Student
 {
 private:
-	static int count;
-
 	string ability;
 
 public:	
@@ -13,10 +11,6 @@ public:
 	SuperStudent(string name, int age, double mark, string ability);
 	~SuperStudent();
 
-	static int getCount() {
-		return count;
-	}
-		
 	string getAbility();
 	void setAbility(string ability);
 
