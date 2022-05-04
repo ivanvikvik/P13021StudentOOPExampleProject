@@ -1,23 +1,24 @@
 ﻿#include "Student.h"
 #include "Group.h"
 #include "SuperStudent.h"
+#include "Leader.h"
+
+void test(Student* student) {
+	cout << student->getInfo() << endl << endl;
+}
 
 int main() {
-	SuperStudent student("Alex", 14, 10, "ability");
-	//Group group1("10a");
-	//Group group2("10b");
+//	Student student("Alex", 15, 10);
+	
+//	SuperStudent superSt("Alex", 15, 10, "Flyable");
 
-	//Student st1("Alex", 14, 9);
-	//Student st2("Anna", 15, 10);
-	//Student st3("Kirill", 15, 10);
-	//Student st4("Artyom", 15, 4);
-	//Student st5("Alex", 14, 9);
-	/*Student st6("Anna", 15, 10);
-		
-	cout << st6.getInfo() << endl;
-	changeMark(st6);
-	cout << st6.getInfo() << endl;
-	*/
+	Student* st = new Student("Alex", 10, 10);
+	test(st);
+	st = new SuperStudent("Peter", 15, 10, "Eatable");
+	test(st);
+	st = new Leader("Matvey", 15, 4, "+375259876543", "matvey@kuda.tut");
+	test(st);
+
 	return 0;
 }
 

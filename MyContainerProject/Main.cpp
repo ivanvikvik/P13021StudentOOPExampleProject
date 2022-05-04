@@ -1,5 +1,16 @@
 #include "Point2D.h"
 
+// Show all students of group
+// Show sorting student -> name, mark, age
+// add new student
+// edit student
+// delete student
+// calculate -> 1) group avg mark
+//				2) best student og group
+//				3) best group
+//				4) best student
+
+
 int main() {
 	/*int n = 2;
 	int a = n++ + n++ + n++ + n++;

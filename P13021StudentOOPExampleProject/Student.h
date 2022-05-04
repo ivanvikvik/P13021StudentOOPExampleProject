@@ -50,5 +50,5 @@ public:
 	double getMark();
 	void setMark(double mark);
 
-	string getInfo();
+	virtual string getInfo();
 };

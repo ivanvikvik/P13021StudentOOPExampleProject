@@ -14,6 +14,6 @@ public:
 	//string getAbility();
 	//void setAbility(string ability);
 
-	//string getInfo();
+	string getInfo() override;
 };
 
